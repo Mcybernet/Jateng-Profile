@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Financial Calculator</title>
+
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 20px;
+}
+.container {
+max-width: 400px;
+margin: auto;
+text-align: center;
+}
+input, button {
+display: block;
+margin: 10px auto;
+}
+#result {
+margin-top: 20px;
+color: green;
+}
+</style>
+
+
+
+</head>
+<body>
+<div class="container">
+<h1>Penghitung Total Tabungan</h1>
+<label for="">Harga :</label><br>
+<select name="" id="">
+    <option value="">frontend developer</option>
+    <option value="">backend developer</option>
+    <option value="">mobile developer</option>
+    <option value="">software QA</option>
+</select>
+<br><br>
+
+<label for="monthlySavings">biaya jasa (Rp):</label>
+<input type="number" id="monthlySavings" placeholder="Masukkan tabungan
+bulanan">
+
+<label for="months">Selama berapa bulan:</label>
+<input type="number" id="months" placeholder="Masukkan jumlah bulan">
+
+<button id="calculateButton">Hitung Total Tabungan</button>
+
+<h2 id="result"></h2>
+</div>
+
+
+
+
+<script>
+function formatRupiah(angka) {
+var numberString = angka.toString();
+var sisa = numberString.length % 3;
+var rupiah = numberString.substr(0, sisa);
+var ribuan = numberString.substr(sisa).match(/\d{3}/g);
+
+
+if (ribuan) {
+var separator = sisa ? '.' : '';
+rupiah += separator + ribuan.join('.');
+}
+return rupiah;
+}
+
+document.getElementById("calculateButton").addEventListener("click", function() {
+var monthlySavings = document.getElementById("monthlySavings").value;
+var months = document.getElementById("months").value;
+var resultElement = document.getElementById("result");
+
+
+// Validasi input
+if (monthlySavings === "" || months === "") {
+resultElement.textContent = "Harap masukkan semua nilai.";
+resultElement.style.color = "red";
+return;
+}
+
+monthlySavings = parseFloat(monthlySavings);
+months = parseInt(months);
+
+if (isNaN(monthlySavings) || isNaN(months) || monthlySavings <= 0 || months <= 0) {
+resultElement.textContent = "Harap masukkan nilai yang valid.";
+resultElement.style.color = "red";
+return;
+}
+
+// Hitung total tabungan
+var totalSavings = monthlySavings * months;
+resultElement.innerHTML = "Total Tabungan Anda adalah:<br>Rp. " +
+formatRupiah(totalSavings);
+});
+</script>
+</body>
+</html>

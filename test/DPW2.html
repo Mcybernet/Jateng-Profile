@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambar di Tengah dengan Latar Belakang</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Set height to 100% of viewport height */
+            background-color: #333; /* Set background color */
+        }
+
+        .background {
+            width: 10%;
+            text-align: center;
+            background-color: #333; /* Set background color */
+        }
+
+        .centered-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="background">
+            <img src="image/CentralJava.png" alt="Gambar di Tengah" class="centered-image">
+        </div>
+    </div>
+</body>
+</html>

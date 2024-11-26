@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Java</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="notif.js" defer></script>
+    <script src="clear.js" defer></script>
+</head>
+<body>
+    <header class="navbar-container">
+        <div class="navbar-logo">
+                <a href="index.html">
+                    <img src="image/CentralJava.png" alt="lambang jateng" >
+                </a> 
+        </div>
+
+            <nav class=" navbar-list">
+                    <ul>
+                        <li><a href="index.html" style="text-decoration: none;">Home</a></li>
+                        <li><a href="Kuliner.html" style="text-decoration: none;">Kuliner</a></li>
+                        <li><a href="Wisata.html" style="text-decoration: none;">Wisata</a></li>
+                        <li><a href="kesenian.html" style="text-decoration: none;" >Kesenian</a></li>
+                        <li><a href="Sejarah.html" style="text-decoration: none;" >Sejarah</a></li>
+                        <li><a href="form.html" style="text-decoration: none;">Form</a></li>
+                    </ul>
+            </nav>
+    </header>
+
+
+    <main>
+        <h2>Central Java tour registration form</h2>
+        <article class="landing-page-6">
+            <div class="landing-page-content-6">
+                <form class="form-input" onsubmit="showNotification(event)"> 
+                    <section class="landing-page-input">
+                            <h2>Registration form</h2>
+
+                            <input type="text" id="name" name="name" placeholder="Nama">
+                        
+                            <input type="text" id="institusi" name="institusi" placeholder="Institusi">
+
+                            <input type="text" id="jabatan" name="jabatan" placeholder="Jabatan">
+
+                            <input type="text" id="alamat" name="alamat" placeholder="Alamat">
+
+                            <input type="number" id="nohp" name="nohp" placeholder="No HP">
+
+                            <input type="email" id="email" name="email" placeholder="Email">
+
+
+                    </section>
+
+                    <section class="button-form">
+                        <input class="button-submit" type="submit" value="Send">
+                        <button class="button-submit" type="button" id="clearButton">Clear</button>
+                    </section>
+                </form>
+            </div>
+        </article>
+    </main>
+
+    <div id="notification" class="notification">
+        Pendaftaran Berhasil!
+    </div>
+
+    <footer>
+        <p>Copyrights &copy: 2024 Muhamad Fahmi Amanullah</p>
+    </footer>
+
+
+</body>
+</html>
+

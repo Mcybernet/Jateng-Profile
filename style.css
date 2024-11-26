@@ -1,0 +1,681 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+/* .navbar-container{
+    width: 100%;
+    background-color: #333;
+    padding: 0.5rem 5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+
+
+
+.navbar-container{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.navbar-logo{
+    padding-bottom: 5%;
+}
+
+.navbar-logo  img{
+    width: 15%;
+    position: relative;
+    row-gap: 20px;
+}
+
+.navbar-logo h1{
+    color: #000000;
+    margin: 0;
+    padding: 1%;
+}
+
+.navbar-list{
+
+}
+.navbar-list ul{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #333;
+    
+}
+
+.navbar-list li{
+    height: 100%;
+}
+.navbar-list li a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color:rgb(255, 255, 255);
+    padding: 14px 30px;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-list li a:hover{
+    color: white;
+    background-color: #000000;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+main h2{
+    text-align: center;
+}
+
+/*index*/
+.landing-page-1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
+}
+
+.landing-page-content-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.landing-page-content-1 img{
+    
+    padding: 30px 20px;
+    width: 300px;
+}
+
+.landing-page-content-1 p{
+    font-size: 15px;
+    padding: 0px 50px;
+    text-align:justify;
+    color: black;
+}
+/* index */
+
+
+/* kuliner */
+.landing-page-2{
+    
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.landing-page-img-2 img{
+    width: 350px;
+    border-radius: 5px;
+}
+
+.landing-page-content-2 h2{
+    text-align: left;
+}
+
+.landing-page-content-2 p{
+    text-align: left;
+    row-gap: 2rem;
+}
+/* kuliner */
+
+/* wisata */
+.landing-page-3{
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.landing-page-img-3 img{
+    width: 350px;
+    border-radius: 5px;
+}
+
+.lading-page-content-3 h2{
+    text-align: left;
+}
+
+.lading-page-content-3 p{
+    text-align: left;
+    row-gap: 9rem;
+}
+/* wisata */
+
+/* Kesenian */
+.landing-page-4{
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.landing-page-image-4 img{
+    width: 350px;
+    border-radius: 5px;
+}
+
+.landing-page-content-4 h2{
+    text-align: left;
+}
+
+.landing-page-content-4 p{
+    text-align: left;
+    row-gap: 9rem;
+}
+/* Kesenian */
+
+
+
+/* ssejarah */
+.landing-page-5{
+    text-align: center;
+    padding: 50px 20px;
+
+}
+
+.landing-page-image-5{
+    padding: 50px;
+}
+
+.landing-page-img-5 img{
+    border-radius: 5px;
+    width: 800px;
+}
+
+.landing-page-content-5 {
+
+}
+
+.landing-page-content-5 p{
+    text-align: left;
+    padding: 0px 50px;
+}
+
+.landing-page-content-5 ul{
+    text-align: left;
+    padding: 0px 90px;
+}
+
+.landing-page-content-5 li{
+    text-align: left;
+}
+/* ssejarah */
+
+
+
+
+/* form */
+.landing-page-6{
+    padding: 1rem 10rem;
+    margin-block-start: 3rem;
+    margin-block-end: 6rem;
+}
+.landing-page-content-6{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+    gap: 10px;
+}
+
+.form-input{
+    padding: 10px 90px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s;
+    border-radius: 30px;
+    background-color: #ffffff;
+    box-shadow: 20px 20px 50px #0c0c0c26;
+}
+
+.form-input .landing-page-input{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+    
+}
+
+.landing-page-input input{
+    width: 100%;
+    padding: 5px ;
+    font-size: 16px;
+    margin: 10px 100px;
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+
+}
+
+.button-form{
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.button-submit{
+    text-align: center;
+    background-color: #333;
+    text-decoration: none;
+    border: solid #333;
+    margin-inline: 10px;
+
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: bolder;
+    
+}
+
+.button-submit:hover{
+    background-color: transparent;
+    border: solid rgb(0, 0, 0);
+    color: #000000;
+}
+
+.notification {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .notification.show {
+    display: block;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes fadeout {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+/* form */
+
+footer{
+    display: flex;
+    justify-content: center;
+    bottom: 0%;
+    background-color: #333;
+    color: #ffffff;
+}
+
+
+@media only screen and (max-width: 1064px) {
+
+    /* for tablet */
+    /* index */
+
+
+    .navbar-logo{
+        padding-bottom: 7%;
+    }
+
+    .navbar-logo  img{
+    width: 30%;
+    position: relative;
+    }
+
+    .landing-page-content-1 {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .landing-page-content-1 img{
+        width: 50%;
+    
+
+    }
+    /* index */
+
+    /* kuliner */
+    .landing-page-2 {
+        padding: 50px 0px;    
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .landing-page-img-2 img{
+        width: 350px;
+
+    }
+
+    .landing-page-content-2{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .landing-page-content-2 h2{
+    
+        text-align: center;
+    }
+
+    .landing-page-content-2 p{
+        text-align: center;
+        padding: 0px 50px;
+    }
+    /* kuliner */
+
+    /* wisata */
+    .landing-page-3 {
+        padding: 50px 0px;    
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .landing-page-img-3 img{
+        width: 350px;
+    }
+
+    .landing-page-content-3{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .landing-page-content-3 h2{
+        text-align: center; 
+    }
+
+    .landing-page-content-3 p{
+        text-align: center;
+        padding: 0px 50px;
+    }
+    /* wisata */
+
+    /* kesenian */
+    .landing-page-4 {
+    
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .landing-page-img-4 img{
+        width: 350px;
+    }
+
+    .landing-page-content-4{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .landing-page-content-4 h2{
+        text-align: center; 
+    }
+
+    .landing-page-content-4 p{
+        text-align: center;        
+    }
+    
+    /* kesenian */
+
+    /* sejarah */
+    .landing-page-img-5 img{
+        width: 50%;
+    }
+
+    .landing-page-content-5 p{
+        text-align: left;
+        padding: 0px 10px;
+    }
+    
+    .landing-page-content-5 ul{
+        text-align: left;
+        padding: 0px 50px;
+    }
+    /* sejarah */
+
+    /* form */
+    .form-input{
+        padding: 10px 90px;
+        display: flex;
+        flex-direction: column;
+        transition: 0.4s;
+        border-radius: 30px;
+        background-color: #ffffff;
+        box-shadow: 20px 20px 50px #0c0c0c26;
+    }
+    
+    .form-input .landing-page-input{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 20px;
+        
+    }
+    
+    .landing-page-input input{
+        width: 100%;
+        padding: 5px ;
+        font-size: 16px;
+        margin: 10px 100px;
+        border: none;
+        border-bottom: 1px solid #333;
+        outline: none;
+    
+    }
+    
+    .button-form{
+        padding: 2rem;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .button-submit{
+        text-align: center;
+        background-color: #333;
+        text-decoration: none;
+        border: solid #333;
+        margin-inline: 10px;
+    
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        color: #ffffff;
+        font-weight: bolder;
+        
+    }
+    
+    .button-submit:hover{
+        background-color: transparent;
+        border: solid rgb(0, 0, 0);
+        color: #000000;
+    }
+    /* form */
+
+}
+
+
+@media only screen and (max-width: 663px) {
+    /* For handphone: */
+
+    .navbar-logo{
+        padding-bottom: 10%;
+    }
+
+    .navbar-logo  img{
+        width: 45%;
+        position: relative;
+    }
+
+    .navbar-list{
+        padding-inline: 15%;
+    }
+
+    .navbar-list ul {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+    }
+
+    .navbar-list li {
+        border-radius: 60px;
+        background-color: #333;
+        color: #ffffff;
+        padding: 8px;
+        margin-bottom: 7px;
+        padding-inline: 2rem;
+    }
+
+
+    
+    .navbar-list li:hover {
+        border-radius: 50px;
+        background-color: #000000;
+        color: #ffffff;
+        
+    }
+
+    /* index */
+
+    .landing-page-content-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .landing-page-content-1 img{
+        width: 70%;
+        border-radius: 10%;
+    }
+    
+    /* index */
+
+    /* kuliner */
+    .landing-page-img-2 img{
+        width: 290px;
+
+    }
+    /* kuliner */
+    
+    /* wisata */
+    .landing-page-img-3 img{
+        width: 290px;
+
+    }
+    /* wisata */
+
+    /* kesenian */
+    .landing-page-img-4 img{
+        width: 290px;
+    }
+    /* kesenian */
+
+    /* sejarah */
+    .landing-page-img-5 img{
+        width: 90%;
+        
+
+    }
+    /* sejarah */
+    
+
+    /* form */
+    .landing-page-content-6{
+
+    }
+    
+    .form-input{
+        padding: 5px 0px;
+        display: flex;
+        flex-direction: column;
+        transition: 0.4s;
+        border-radius: 30px;
+        background-color: #ffffff;
+        box-shadow: 20px 20px 50px #0c0c0c26;
+    }
+    
+    .form-input .landing-page-input{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 20px;
+        
+    }
+    
+    .landing-page-input input{
+        width: 60%;
+        padding: 5px ;
+        font-size: 16px;
+        margin: 10px 100px;
+        border: none;
+        border-bottom: 1px solid #333;
+        outline: none;
+    
+    }
+    
+    .button-form{
+        padding: 2rem;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .button-submit{
+        text-align: center;
+        background-color: #333;
+        text-decoration: none;
+        border: solid #333;
+        margin-inline: 10px;
+    
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        color: #ffffff;
+        font-weight: bolder;
+        
+    }
+    
+    .button-submit:hover{
+        background-color: transparent;
+        border: solid rgb(0, 0, 0);
+        color: #000000;
+    }
+
+    }
+    /* form */
